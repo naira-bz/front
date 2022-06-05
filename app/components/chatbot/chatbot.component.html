@@ -1,0 +1,21 @@
+<div class="card text-center">
+    <div class="card-header">
+      CHAT
+    </div>
+    <div class="card-body">
+        <div class="msg h-100">
+        <p *ngFor="let msg of msgs" class="rec p-2">
+                {{msg.text}}
+        </p>
+        </div>
+    </div>   
+    <form class="card-footer text-muted">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="...." [(ngModel)]="newMsg">
+        <div class="input-group-append" (click)="sendMsg"></div>  
+            <span class="input-group-text" id="basic-addon2">
+                    <img class="imgenv" src="https://cdn-icons-png.flaticon.com/512/786/786407.png" width="20px" alt="send message">
+            </span>
+        </div>   
+    </form>
+</div>

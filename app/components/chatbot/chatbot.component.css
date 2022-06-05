@@ -1,0 +1,37 @@
+.card-body{
+    padding: 0.5rem;
+    background-color:antiquewhite;
+}
+
+.imgenv:active{
+    transform: scale(0.9);
+}
+
+
+.env{
+display: block;
+float: right;
+background-color: aqua;
+color: white;
+min-width: 50.01%;
+border-radius: 10px;
+text-align: right;
+}
+
+.rec{
+    display: block;
+    float: left;
+    background-color: blueviolet;
+    color: white;
+    min-width: 50.01%;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.msg{
+    overflow: scroll;
+    padding: 0.3rem;
+}
+.msg::-webkit-scrollbar{
+    display: none;
+}
